@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Monitor</title>
+  <link rel="stylesheet" href="monitor.css">
+</head>
+
+<body>
+  <h1>HỆ THỐNG GIÁM SÁT WEBSITE</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tên website</th>
+        <th>URL</th>
+        <th>Trạng thái</th>
+        <th>Thời gian phản hồi</th>
+        <th>Người phụ trách</th>
+        <th>Thao tác</th>
+      </tr>
+    </thead>
+
+    <tbody id="website-table">
+      <tr>
+        <td colspan="5">Đang tải dữ liệu...</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2> Thêm website</h2>
+
+<form id="add-website-form">
+  <input type="text" id="name" placeholder="Tên website" required />
+  <input type="url" id="url" placeholder="URL (https://...)" required />
+  <button type="submit">Thêm</button>
+</form>
+<hr />
+
+  <script src="monitor.js"></script>
+</body>
+</html>
